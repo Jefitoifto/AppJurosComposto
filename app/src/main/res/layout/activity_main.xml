@@ -6,17 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewValorEmprestimo"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etSalarioCliente"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:text="Valor do empréstimo:"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewSalario" />
+
+    <TextView
+
+        android:id="@+id/textViewSalario"
+        android:layout_width="119dp"
+        android:layout_height="21dp"
+        android:text="Salário do Cliente:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <EditText
         android:id="@+id/etValorEmprestimo"
@@ -25,45 +36,47 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.132" />
 
     <TextView
-        android:id="@+id/textViewQtdParcelas"
+        android:id="@+id/textViewValorEmprestimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quantidade de Parcelas:"
+        android:text="Valor do empréstimo:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintVertical_bias="0.127" />
 
     <EditText
         android:id="@+id/etNumParcelas"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="0.198" />
+
 
     <TextView
-        android:id="@+id/textViewTaxaJuros"
+        android:id="@+id/textViewQtdParcelas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Taxa de Juros (%):"
+        android:text="Numero de Parcelas:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <EditText
         android:id="@+id/etTaxaJuros"
@@ -72,47 +85,35 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.263" />
+
 
     <TextView
-        android:id="@+id/textViewSalario"
-        android:layout_width="119dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="164dp"
-        android:text="Salário do Cliente:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toStartOf="@+id/etTaxaJuros"
-        app:layout_constraintTop_toBottomOf="@+id/etTaxaJuros"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/etSalarioCliente"
-        android:layout_width="130dp"
+        android:id="@+id/textViewTaxaJuros"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:text="Taxa de Juros (%) ao mês:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.254" />
 
     <Button
         android:id="@+id/buttonCalcular"
-        android:layout_width="126dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="444dp"
+        android:layout_width="129dp"
+        android:layout_height="63dp"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintVertical_bias="0.306" />
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
 
     <TextView
         android:id="@+id/tvResultado"
@@ -121,22 +122,33 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.499" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textViewSalario,etSalarioCliente,textViewValorEmprestimo,etValorEmprestimo,textViewQtdParcelas,etNumParcelas,textViewTaxaJuros,etTaxaJuros" />
 
     <!--    <Button-->
-<!--        android:id="@+id/buttonCalcular"-->
-<!--        android:layout_width="121dp"-->
-<!--        android:layout_height="59dp"-->
-<!--        android:text="Calcular"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.444"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.449" />-->
+    <!--        android:id="@+id/buttonCalcular"-->
+    <!--        android:layout_width="121dp"-->
+    <!--        android:layout_height="59dp"-->
+    <!--        android:text="Calcular"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.444"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.449" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
