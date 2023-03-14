@@ -12,9 +12,9 @@ Nota: definir pacotes e classe necessárias.
 
 ##A implementação
 
-<img align="cemter" alt="Jef-pic" height="500" style="border-radius:50px;" src="juros composto.png">
+<img align="center" alt="Jef-pic" height="500" style="border-radius:50px;" src="juros composto.png">
 
 ## O App
 
-<img align="cemter" alt="Jef-pic" height="500" style="border-radius:50px;" src="cap1.png">
-<img align="cemter" alt="Jef-pic" height="500" style="border-radius:50px;" src="cap2.png">
+<img align="center" alt="Jef-pic" height="500" style="border-radius:50px;" src="cap1.png">
+<img align="center" alt="Jef-pic" height="500" style="border-radius:50px;" src="cap2.png">
